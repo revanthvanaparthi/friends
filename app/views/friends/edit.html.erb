@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="card-header">
+    <h1>Editing friend</h1>
+  </div>
+  <div class="card-body">
+    <%= render "form", friend: @friend %>
+    <br>
+    <div class="btn-toolbar">
+      <%= link_to 'Show', @friend, class:"btn btn-secondary btn-group mr-2" %>
+      <%= button_to 'Delete', @friend, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger btn-group mr-2" %>
+      <%= link_to 'Back', :back, class:"btn btn-dark btn-group mr-2" %>
+    </div>
+  </div>
+</div>

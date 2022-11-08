@@ -1,0 +1,9 @@
+<div class="jumbotron">
+  <%= render @friend %>
+  <br/>
+  <div class="btn-toolbar">
+  <%= link_to 'Edit', edit_friend_path(@friend), class:"btn btn-primary btn-group mr-2" %>
+  <%= button_to 'Delete', @friend, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger btn-group mr-2" %>
+  <%= link_to 'Back', :back, class:"btn btn-dark btn-group mr-2" %>
+  </div>
+</div>
